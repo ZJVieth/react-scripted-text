@@ -1,6 +1,7 @@
-# react-scripted-text
+# react-scripted-text (WIP)
 
-> Simple react hook and component to display scriptable text.
+> React component and hook to display script-based text output.
+
 
 [![NPM](https://img.shields.io/npm/v/react-scripted-text.svg)](https://www.npmjs.com/package/react-scripted-text) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,16 +14,15 @@ npm install --save react-scripted-text
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-scripted-text'
-import 'react-scripted-text/dist/index.css'
+import ScriptedText from 'react-scripted-text'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return <ScriptedText script="text_script.txt" />
 }
+
+export default App
 ```
 
 ## License
