@@ -1,0 +1,33 @@
+// Settings -------------------------------
+* langs English/Japanese/German
+* set lang English 
+* set delay 2000
+* set speed 50
+//
+// Opening Scene ---------------------------
+Welcome
+こんばんは
+Wilkommen
+to the new world.
+これは都会ですよ.
+in dieser neuen Welt.
+
+* wait
+* clear
+*n set speed 100 2
+*n set lang Japanese
+Are you new here?
+あなたも?
+Neu hier?
+
+Very cool.
+管井
+Sehr cool.
+
+Wow it works.
+頑張って
+Wow es funktioniert.
+
+* varset is_new_user 2
+* val 1 "Yes"/"はい"/"Ja"
+* val 0 "No"/"ちがいます"/"Nein"

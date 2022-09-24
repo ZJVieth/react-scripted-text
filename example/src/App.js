@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-scripted-text'
+import ScriptedText, { useScriptedText } from 'react-scripted-text'
 import 'react-scripted-text/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  // return <ScriptedText script_file="script.txt" />
+  return <div dangerouslySetInnerHTML={{ __html: useScriptedText({ script_file: "script.txt" }) }} />
 }
 
 export default App
