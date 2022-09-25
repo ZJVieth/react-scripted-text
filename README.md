@@ -1,4 +1,4 @@
-# react-scripted-text (WIP)
+# react-scripted-text (Alpha)
 
 > React component and hook to display script-based text output.
 
@@ -19,11 +19,35 @@ import React from 'react'
 import ScriptedText from 'react-scripted-text'
 
 const App = () => {
-  return <ScriptedText script="text_script.txt" />
+  return (
+    <div>
+      <ScriptedText script="text_script.txt" />
+      {/* or */}
+      <div>
+        { useScriptedText({script_file: "text_script.txt"})}
+      </div>
+    </div>
+  )
 }
 
 export default App
 ```
+
+```txt
+// see github example/public/script.txt for an example
+// this section will be updated soon
+```
+
+## Version History
+
+### 0.1.1 Usability Fixes
+- removed console.logs
+- changed ScriptedText property to *script* (formerly *script_file*)
+
+### 0.1.0 Alpha Release
+- ScriptedText component
+- useScriptedText hook
+- Available commands: langs, set (lang, delay, speed), *n, wait, clear
 
 ## License
 

@@ -72,7 +72,7 @@ export default function useScriptedText(props = {}) {
                         setLetterIndex(0)
                         return
                     }
-                    console.log(outObj.val)
+                    // console.log(outObj.val)
                     setOutput(outObj.val)
                     setLetterIndex(outObj.index)
                 },
@@ -94,7 +94,6 @@ export default function useScriptedText(props = {}) {
                 waitTimer = setInterval(
                     () => {
                         setWaitState({ waiting: false })
-                        console.log("Finished Waiting")
                     },
                     waitState.duration
                 )

@@ -1,6 +1,6 @@
 {
   "name": "react-scripted-text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component and hook to display script-based text output.",
   "author": "ZJVieth",
   "license": "MIT",

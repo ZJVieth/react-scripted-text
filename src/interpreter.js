@@ -61,7 +61,6 @@ export default function interpretLine(
         }
         if (cmd === "wait") {
             funcs.setWaitState({ waiting: true, duration: settings.delay })
-            console.log("Starting to wait.")
             return state
         }
         if (cmd === "langs") {
@@ -87,7 +86,7 @@ export default function interpretLine(
         return state
     }
 
-    console.log(line, state)
+    // console.log(line, state)
 
     // Text Line Interpreting
     if (state.expecting == EXPECT.NONE) {
@@ -98,7 +97,7 @@ export default function interpretLine(
         state.expecting_i = 0
     }
 
-    console.log(line, state, useSettings.langs.indexOf(useSettings.lang))
+    // console.log(line, state, useSettings.langs.indexOf(useSettings.lang))
 
     // only printing the line of chosen language
     if (state.expecting_i == useSettings.langs.indexOf(useSettings.lang)) {
